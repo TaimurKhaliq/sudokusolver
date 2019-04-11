@@ -8,7 +8,7 @@ lineReader.on('line', function (line) {
     data.push(util.utilities.getDigits(line));
 });
 lineReader.on('close', function (line) {
-    isSolved(data);
+    return console.log(isSolved(data));
 });
 
 function isSolved(data) {
